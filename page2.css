@@ -1,0 +1,292 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: whitesmoke;
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: 15px auto 40px;
+            background: white;
+            padding: 15px 20px 40px;
+            border: 1px solid silver;
+        }
+
+        /* ===== hider/nav ===== */
+        header {
+            border-bottom: 1px solid gray;
+            padding-bottom: 7px;
+            margin-bottom: 10px;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            background: white;
+            border: 1px solid silver;
+            padding: 4px 8px;
+        }
+
+        .top-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 36px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: blue;
+            margin-top: 8px;
+        }
+
+        .search-icon {
+            font-size: 18px;
+            margin-right: 6px;
+        }
+
+        /* ===== welkam bar ===== */
+        .welcome-bar {
+            margin-top: 10px;
+            border: 1px solid darkgray;
+            padding: 6px;
+            font-size: 12px;
+            background: white;
+        }
+
+        /* ===== talaan ng contents ===== */
+        .top-wrapper {
+            margin-top: 12px;
+            border: 1px solid lightgray;
+            padding: 8px;
+            background: white;
+        }
+
+        .top-title {
+            display: inline-block;
+            padding: 2px 6px;
+            border: 1px solid lightgray;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 10px;
+            background: lightgray;
+        }
+
+        .top-content {
+            display: flex;
+            gap: 45px;
+            align-items: flex-start;
+            font-size: 13px;
+        }
+
+        .top-column ul {
+            list-style: none;
+            line-height: 1.7;
+        }
+
+        .top-small-box {
+            border: 1px solid lightgray;
+            padding: 8px 12px;
+            min-width: 200px;
+            background: whitesmoke;
+        }
+
+        .top-small-box h4 {
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+
+        .top-small-box ul {
+            list-style: none;
+            line-height: 1.7;
+        }
+
+        .top-small-box .sub-title {
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        /* ===== hottest/local ===== */
+        .section-row {
+            display: flex;
+            gap: 15px;
+            margin-top: 18px;
+        }
+
+        .box {
+            border: 1px solid lightgray;
+            padding: 8px;
+            flex: 1;
+            background: whitesmoke;
+        }
+
+        .box-title {
+            display: inline-block;
+            padding: 2px 6px;
+            border: 1px solid lightgray;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 8px;
+            background: white;
+        }
+
+        .poster-row {
+            display: flex;
+            gap: 6px;
+            margin-top: 4px;
+        }
+
+        .poster-column {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-top: 4px;
+        }
+
+        .poster {
+            width: 100%;
+            border: 1px solid silver;
+            height: 170px;
+            object-fit: cover;
+            background: lightgray;
+        }
+
+        /* ===== koleksyon ===== */
+        .movie-collections {
+            margin-top: 40px;
+            border-top: 1px solid silver;
+            padding-top: 25px;
+        }
+
+        .movie-collections-title {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .movie-collections-title span {
+            display: inline-block;
+            border: 1px solid lightgray;
+            padding: 6px 40px;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 20px;
+            background: whitesmoke;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .movie-card {
+            flex: 1;
+            text-align: left;
+            font-size: 12px;
+        }
+
+        .movie-card img {
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            border: 1px solid silver;
+            object-fit: cover;
+            background: whitesmoke;
+            margin-bottom: 6px;
+        }
+
+        .movie-card h3 {
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .movie-card p {
+            font-style: italic;
+        }
+
+        /* ===== kontak ===== */
+        #contact {
+            margin-top: 40px;
+            border-top: 1px solid whitesmoke;
+            padding-top: 20px;
+        }
+
+        #contact h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #contact p {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        #contact form {
+            max-width: 450px;
+            background: lightgray;
+            border: 1px solid silver;
+            padding: 62.5%;
+        }
+
+        #contact label {
+            display: block;
+            font-size: 13px;
+            margin-top: 8px;
+            margin-bottom: 3px;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 0.6%;
+            font-size: 13px;
+            border: 1px solid lightgray;
+        }
+
+        #contact button {
+            margin-top: 10px;
+            padding: 37.5% 75%;
+            font-size: 13px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #contact button:hover {
+            background: lightslategray;
+        }
+
+        /* ===== pangrespond ===== */
+        @media (max-width: 900px) {
+            .top-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .section-row {
+                flex-direction: column;
+            }
+
+            .movie-grid {
+                flex-direction: column;
+            }
+
+        }
